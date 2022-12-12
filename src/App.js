@@ -34,7 +34,7 @@ function App() {
         <h1>My Projects Timeline</h1>
         <div className="project-container">
           <div className="timeline-container">
-            <h2>September 20</h2>
+            <h2>Sept. 20</h2>
             <div className="timeline"></div>
           </div>
           <div className="project">
@@ -56,7 +56,7 @@ function App() {
         </div>
         <div className="project-container">
           <div className="timeline-container">
-            <h2>October 4</h2>
+            <h2>Oct. 4</h2>
             <div className="timeline"></div>
           </div>
           <div className="project">
@@ -80,7 +80,7 @@ function App() {
         </div>
         <div className="project-container">
           <div className="timeline-container">
-            <h2>October 25</h2>
+            <h2>Oct. 25</h2>
             <div className="timeline"></div>
           </div>
           <div className="project">
@@ -106,7 +106,7 @@ function App() {
         </div>
         <div className="project-container">
           <div className="timeline-container">
-            <h2>November 8</h2>
+            <h2>Nov. 8</h2>
             <div className="timeline"></div>
           </div>
           <div className="project">
