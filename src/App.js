@@ -14,7 +14,10 @@ function App() {
     <div className="App">
       <div className="splash-page">
         <Navbar className="navbar">
-          <Navbar.Brand className="brand" href="#">
+          <Navbar.Brand
+            className="brand"
+            href="https://stonedstallion420.github.io/portfolio/"
+          >
             <img className="logo" src={logo}></img>
             StonedStallion420
           </Navbar.Brand>
