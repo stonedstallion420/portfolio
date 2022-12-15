@@ -14,23 +14,27 @@ function App() {
     <div className="App">
       <div className="splash-page">
         <Navbar className="navbar">
-          <Navbar.Brand className="brand" href="#home">
+          <Navbar.Brand className="brand" href="/">
             <img className="logo" src={logo}></img>
             StonedStallion420
           </Navbar.Brand>
         </Navbar>
-        <div className="intro">
-          <span>Hello! I'm </span>
-          <span className="name">StonedStallion420</span>
-          <p>
-            a student at Brown University taking UIUX. Prior to this class, I
-            had no front-end experience. Below is a progression of the work I
-            made in chronological order.
-          </p>
+        <div className="intro-container">
+          <div className="intro">
+            <span>Hello! I'm </span>
+            <span className="name">StonedStallion420</span>
+            <p>
+              a student at Brown University taking UIUX. Prior to this class, I
+              had no front-end experience. Below is a progression of the work I
+              made in chronological order.
+            </p>
+          </div>
+          <a className="arrow" href="#main">
+            <img src={arrow}></img>
+          </a>
         </div>
-        <img className="arrow" src={arrow}></img>
       </div>
-      <main>
+      <main id="main">
         <h1>My Projects Timeline</h1>
         <div className="project-container">
           <div className="timeline-container">
@@ -38,12 +42,12 @@ function App() {
             <div className="timeline"></div>
           </div>
           <div className="project">
-            <h2>Personas and Storyboarding</h2>
+            <h2>Personas & Storyboarding</h2>
             <img src={personas}></img>
             <p className="project-description">
-              I observed people interacting with a Nespresso coffee machine,
-              interviewed them about their experiences, created two personas
-              based on my observations and their responses, then illustrated a
+              For my first project, I observed real users interacting with an
+              interface, interviewed these people about their experiences,
+              created personas based on these users, and illustrated a
               storyboard for one of my personas.
             </p>
             <Button
@@ -63,11 +67,10 @@ function App() {
             <h2>Responsive Redesign</h2>
             <img src={redesign}></img>
             <p className="project-description">
-              The goal of this assignment was to practice the workflow of
-              redesigning a website. I identified flaws in an existing
-              interface, created low-fidelity and high-fidelity prototypes for
-              various screen sizes, then built a responsive website based on
-              those prototypes.
+              For my next assignment, I practiced the workflow of redesigning a
+              website. I identified flaws in an existing interface, created
+              low-fidelity and high-fidelity prototypes for various screen
+              sizes, then built a responsive website based on those prototypes.
             </p>
             <Button
               className="project-link"
@@ -84,21 +87,18 @@ function App() {
             <div className="timeline"></div>
           </div>
           <div className="project">
-            <h2>Iterative Design and Evaluation</h2>
+            <h2>Iterative Design & Evaluation</h2>
             <img src={iterativeDesign}></img>
             <p className="project-description">
-              This project was for CSCI1300: User Interface and User Interaction
-              focusing on going through the full process of mocking up a
-              solution to a startup's concept. We iteratively designed an
-              interactive interface for an emerging startup: Finnt. There are
-              four parts to the iterative design process flow: (1) sketching
-              ideas of the interface, (2) creating an interactive, high-fidelity
-              prototype, (3) conducting user testing on a final, revised
-              prototype, and (4) contacting the start-up.
+              By mid-semester, I became more comfortable with web development
+              and learned several principles of UX design. I had an opportunity
+              to apply what I learned in the real-world in this project, where I
+              worked with a group to design an interactive interface for an
+              emerging startup.
             </p>
             <Button
               variant="outline-success"
-              href="https://groovylynx123.github.io/iterative-design-project/"
+              href="https://stonedstallion420.github.io/iterative-design/"
             >
               Take a look!
             </Button>
@@ -112,8 +112,15 @@ function App() {
           <div className="project">
             <h2>Development</h2>
             <img src={development}></img>
-            <p className="project-description">Project description</p>
-            <Button variant="outline-success" href="#">
+            <p className="project-description">
+              Prior to this project, all of the interfaces I coded were not
+              interactive. For my final project, I learned React to develop an
+              interactive interface.
+            </p>
+            <Button
+              variant="outline-success"
+              href="https://stonedstallion420.github.io/development-page/"
+            >
               Take a look!
             </Button>
           </div>

@@ -1,13 +1,17 @@
 .App {
   font-family: Georgia, serif;
+  overflow-x: hidden;
 }
 
 .splash-page {
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
 
-  width: 100%;
-  height: 700px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -16,10 +20,17 @@
   margin: 1rem;
 }
 
+.intro-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
-  font-size: 50px;
-  width: 1000px;
+  font-size: 3em;
   margin-left: 5rem;
+  margin-right: 5rem;
+  max-width: 1000px;
 }
 
 .name {
@@ -30,9 +41,9 @@
   height: 70px;
   width: 70px;
   display: block;
-  margin-top: 5rem;
-  margin-right: 50%;
-  margin-left: 50%;
+  margin-top: auto;
+  margin-bottom: 2rem;
+  align-self: center;
 }
 
 main {
@@ -40,10 +51,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-}
-
-h1 {
-  font-style: italic;
 }
 
 .project-container {
